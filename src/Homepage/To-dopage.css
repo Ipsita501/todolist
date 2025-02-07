@@ -1,0 +1,126 @@
+/* Apply a modern font and background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Center the app container */
+.App {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+.input-box {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Add button styling */
+.add-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #0056b3;
+}
+
+/* Task list container */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.task-item:hover {
+    background: #e9ecef;
+}
+
+/* Delete icon */
+.delete-icon {
+    color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-icon:hover {
+    color: darkred;
+    transform: scale(1.2);
+}
+
+/* Navbar styling */
+.navbar {
+    background: #007bff;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    background: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .App {
+        width: 90%;
+    }
+}

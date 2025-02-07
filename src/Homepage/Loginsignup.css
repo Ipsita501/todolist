@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background: radial-gradient(circle, rgb(227, 126, 126), rgb(175, 175, 215), rgb(244, 244, 195)); /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Loginsignup container */
+  .loginsignup {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .header .text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .header .underline {
+    width: 80px;
+    height: 4px;
+    background-color: #007bff; /* Primary color */
+    margin: 10px auto 20px;
+    border-radius: 10px;
+  }
+  
+  /* Input container */
+  .inputs {
+    margin-top: 20px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .input input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+  }
+  
+  .submitcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  .submit:active {
+    transform: translateY(1px);
+  }
+  
+  
+  /* Responsiveness */
+  @media (max-width: 480px) {
+    .loginsignup {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .header .text {
+      font-size: 20px;
+    }
+  
+    .submit {
+      font-size: 14px;
+    }
+  }
+  .gray{
+    background:#f0f0f0 ;
+    color: #827f7f;
+  }
+  
