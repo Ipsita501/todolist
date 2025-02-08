@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import './App.css';
-import Loginsignup from './Homepage/Loginsignup.jsx';
-import Welcome from './Homepage/welcome.jsx';
+import Loginsignup from "./Homepage/Loginsignup.jsx"
+import Welcome from './Homepage/Welcome.jsx';
 import ToDopage from './Homepage/Todopage.jsx';
 import { useState } from 'react';
 
@@ -15,7 +15,7 @@ function App() {
   return <div className='App'>
     <BrowserRouter>
       <Routes>
-        <Route path="/Welcome" element={<Welcome />} />
+        <Route path="/" element={<Welcome />} />
         <Route path="/Loginsignup" element={<Loginsignup />} />
         <Route path="/Todopage" element={<ToDopage addList={addList}/>} />
       </Routes>
